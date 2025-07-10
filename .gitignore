@@ -1,0 +1,49 @@
+# Environment variables (CRITICAL!)  
+.env  
+.env.local  
+.env.*.local  
+
+# Dependency directories  
+node_modules/  
+
+# Log files  
+*.log  
+logs/  
+
+# Runtime data  
+*.pid  
+*.seed  
+
+# Diagnostic reports  
+report.*.json  
+
+# Build artifacts  
+dist/  
+build/  
+coverage/  
+
+# IDE/Editor configs  
+.vscode/  
+.idea/  
+*.suo  
+*.ntvs*  
+*.njsproj  
+*.sln  
+*.sw?  
+
+# OS metadata  
+.DS_Store  
+Thumbs.db  
+
+# MongoDB files  
+/data/  # If using local DB storage  
+mongod.log  
+
+# Testing artifacts  
+/test-results/  
+/junit.xml  
+
+# Optional (but recommended)  
+*.bak  
+*.tmp  
+*~  
