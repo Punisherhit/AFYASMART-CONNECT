@@ -64,6 +64,7 @@ const chatbotRoutes = require('./routes/chatbot.routes'); // New: Import chatbot
 const announcementRoutes = require('./routes/announcementRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
 const systemRoutes = require('./routes/systemRoutes');
+const triageRoutes = require('./routes/triage');
 
 // --- API Routes Mounting ---
 // Standardizing all API routes under /api/v1/ for consistency
@@ -83,6 +84,7 @@ app.use('/api/v1/patient-flow', patientFlowRoutes);
 app.use('/api/v1/transfers', transferRoutes);
 app.use('/api/v1/operators', operatorRoutes); // New: Mount operator routes
 app.use('/api/chatbot', chatbotRoutes);
+app.use('/api/v1/triage', triageRoutes);
 
 // Add these before error middleware
 app.use('/api/announcements', announcementRoutes);
